@@ -56,12 +56,15 @@ def find(number_decimal_1,number_decimal_2, op):
         decimal_equivalent  = eq_number_decimal_1 - eq_number_decimal_2
     elif op == "*" or op.lower()=="x" :
         decimal_equivalent  = eq_number_decimal_1 * eq_number_decimal_2
+    elif op=="/" :
+        decimal_equivalent  = eq_number_decimal_1 / eq_number_decimal_2
     else:
         print("invalid operator")
         return
     print(decimal_equivalent)
     roman_result = dec_to_rom2(decimal_equivalent)
     print("The Result \n########################\n{} {} {} = {}\n".format(number_decimal_1,op,number_decimal_2, roman_result))
+    return roman_result
 
 
 if __name__ == "__main__":

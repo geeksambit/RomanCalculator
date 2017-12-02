@@ -10,8 +10,8 @@ class TestCalc(unittest.TestCase):
         result2 =roman_cal.dec_to_rom2(10)
         self.assertEquals(result2,'X')
     def test_find(self):
-        result3 = roman_cal.find('X','I','+')
-        self.assertEquals(result3,'XI')
+        result3 = roman_cal.find('X','X','*')
+        self.assertEquals(result3,'C')
 
 if __name__ == '__main__':
     unittest.main()
